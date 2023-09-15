@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all;
+    transition-duration: 1s;
+}
+
+/* Keyframes */
+@-webkit-keyframes spin {
+    from {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg); -moz-transform: rotate(-360deg);}
+}
+
+@keyframes spin {
+    from {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-360deg); -moz-transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes spin2 {
+    from {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg); -moz-transform: rotate(720deg);}
+}
+
+@keyframes spin2 {
+    from {-webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg); -moz-transform: rotate(720deg);}
+}
+
+
+
+/* Spinner */
+#spinner {
+    border:3px solid #ffffff;
+    border-top:3px solid transparent;
+    border-bottom:3px solid transparent;
+    border-style:solid;
+    position:relative;
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-animation: spin 1s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+/* 
+#spinner:after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #ffffff;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-style: solid;
+    margin: 0 auto;
+    margin: 28px -17px 85px;
+    border-radius: 50%;
+    -webkit-animation: spin2 1s infinite linear;
+    -moz-animation: spin2 1s infinite linear;
+    -o-animation: spin2 1s infinite linear;
+    animation: spin2 1s infinite linear;
+} */
